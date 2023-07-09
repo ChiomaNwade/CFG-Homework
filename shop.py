@@ -33,7 +33,7 @@ class Shop:
         self.available_money -= price
 
     def ask_for_more_money(self):
-        more_money = input("Do you have more money? (Enter amount or 'no'): ")
+        more_money = 'no'  #instead of input("Do you have more money? (Enter amount or 'no'): ")
         if more_money == 'no':
             print("Thank you for visiting the shop!")
         else:
@@ -47,16 +47,18 @@ class Shop:
         self.welcome_customer()
 
         while self.purchase_attempts < 3:
+            option = input("Enter the item you want to purchase (or 'exit' to leave): ")
             try:
-                option = input("Enter the item you want to purchase (or 'exit' to leave): ")
-                self.process_purchase(option)
+                result, price = self.process_purchase(option)
+                print(result)
+                self.available_money -= price
             except ValueError as err:
                 print(f"Error: {err}")
-                self.ask_for_more_money()
-                self.purchase_attempts += 1
-            else:
+                more_money = input("Do you have more money? (Enter amount or 'no'): ")
+                result = self.ask_for_more_money(more_money)
+                print(result)
                 self.purchase_attempts += 1
 
         if self.purchase_attempts == 3:
-            print("Maximum purchase attempts reached. Exiting the shop.")
+            raise ValueError("Maximum purchase attempts reached. Exiting the shop.")
 

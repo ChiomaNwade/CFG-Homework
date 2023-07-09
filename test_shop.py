@@ -1,7 +1,7 @@
 #TASK 4
 # Unit Tests
 import unittest
-
+from shop import Shop
 
 class ShopTestCase(unittest.TestCase):
     def setUp(self):

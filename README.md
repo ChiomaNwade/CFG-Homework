@@ -28,10 +28,10 @@ The dataset is divided into 25,000 samples for training and an equal count of 25
 
 The IMDb dataset available through the TorchText library's datasets module. The datasets.IMDB.splits(txt, labels) function call is used to load the IMDb dataset.
 
-To find out more about the dataset, visit https://pytorch.org/text/stable/datasets.html#imdb or http://ai.stanford.edu/~amaas/data/sentiment/
+To ACCESS the dataset, visit https://pytorch.org/text/stable/datasets.html#imdb or http://ai.stanford.edu/~amaas/data/sentiment/
 
 
-EXECUTIION
+EXECUTION
 run the cells one after the other, try not to run the next cell when the one before it has not finished. 
 
 

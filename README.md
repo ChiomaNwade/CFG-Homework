@@ -1,4 +1,5 @@
-Instructions to load the Sentiment analysis project.
+INSTRUCTIONS TO LOAD THE SENTIMENT ANALYSIS PROJECT
+
 LIBRARIES #Install and import the following Libraries.
 pandas
 numpy

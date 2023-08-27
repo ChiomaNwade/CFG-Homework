@@ -34,6 +34,7 @@ To ACCESS the dataset, visit https://pytorch.org/text/stable/datasets.html#imdb 
 
 
 EXECUTION
+we have added comments inbetween codes for you to have a better understaning of everything done. 
 run the cells one after the other, try not to run the next cell when the one before it has not finished. 
 you can adjust your batches if you want it to run faster. 
 

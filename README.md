@@ -32,6 +32,7 @@ The IMDb dataset available through the TorchText library's datasets module. The 
 
 To ACCESS the dataset, visit http://ai.stanford.edu/~amaas/data/sentiment/
 
+NOTE: the dataset is balanced between positives and negatives then we created another validation dataset
 
 EXECUTION
 we have added comments inbetween codes for you to have a better understaning of everything done. 
